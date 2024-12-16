@@ -1,0 +1,385 @@
+/* General Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000000;
+    color: white;
+    background-image: url('bg\ gradient.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:sticky;
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #161616;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #b61a56;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a.active,
+nav a:hover {
+    color: #b61a56;
+}
+
+/* Section Styling */
+section {
+    padding: 5rem 9%;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.home-img img {
+    position: relative;
+    width: 34vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #b61a56;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #b61a56;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.social-icons {
+    margin: 2rem 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b61a56;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    color: #b61a56;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    background-color: #b61a56;
+    color: #252942;
+    box-shadow: 0 0 25px #b61a56;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: transparent;
+    border: 0.2rem solid #b61a56;
+    color: #b61a56;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #b61a56;
+    color: #252942;
+    transform: scale(1.1);
+}
+
+/* About Me Section */
+.about {
+    background-color: #161616;
+    border: 1px solid #887784;
+    border-radius: 20px;
+}
+
+.about h2 {
+    color: #b61a56;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+.skills {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ccb0b0;
+}
+
+.skills h2 {
+    color: #b61a56;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skills p {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #b61a56;
+}
+.skills-percent {
+    padding: 1rem;
+}
+
+.skill-wrapper {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.skill-bar {
+    background-color: #b61a56;
+    padding: 5px;
+    color: var(--black);
+    border-bottom-left-radius:50cap;
+    border-top-left-radius: 50cap;
+}
+
+.gd {
+    width: 40%;
+}
+
+.wd {
+    width: 30%;
+}
+
+.illustration {
+    width: 70%;
+}
+
+.gw {
+    width: 55%;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #161616;
+    border: 1px solid #b61a56;
+    border-radius: 20px;
+}
+
+.projects h2 {
+    color: #b61a56;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects p {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #000000;
+    border-top: 2px solid #b61a56;
+    border: 1px solid #b61a56;
+    border-radius: 20px;
+}
+
+.contact h2 {
+    color: #b61a56;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #b61a56;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #161616;
+    padding: 1rem;
+    text-align: left;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #b61a56;
+}
+.output {
+    margin-left: 15px;
+    color: #b61a56;
+    margin-bottom: 15px;
+}
+
+.indent-output {
+    margin-left: 25px;
+    color: #eeedf5;
+    margin-bottom: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-img img {
+        width: 50%;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Applying Animations */
+header {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-img img {
+    animation: bounce 0s infinite alternate;
+}
+
+.home-content h1, 
+.home-content h3, 
+.home-content p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+section {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.social-icons a {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.btn {
+    animation: bounce 2s infinite alternate;
+}
+
+.about, .skills, .projects, .contact {
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    animation: fadeIn 1.5s ease-in-out;
+}
